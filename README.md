@@ -1,5 +1,5 @@
 # Project 3 Repo
-### [Github User Page] (https://github.com/benmcmillan/benmcmillan.github.io)
+#### [Github User Page](https://github.com/benmcmillan/benmcmillan.github.io)
 
 ## 281 Project 3 Learning Outcomes
 - A web API or Application Programming Interface is an API
