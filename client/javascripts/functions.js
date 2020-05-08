@@ -71,6 +71,16 @@ let findAllbitBatBotOrNots4 = (arr) => {
   return result;
 };
 
+let findAllbitBatBotOrNotsXC = (arr) => {
+  //your code goes here
+  //use forIn method
+  let result = [];
+  for (const i in arr) {
+    result.push(bitBatBotOrNotLabel(i));
+  }
+  return result;
+};
+
 //test the functions
 
 findAllbitBatBotOrNots1(arrOf1To100);
@@ -80,3 +90,5 @@ findAllbitBatBotOrNots2(arrOf1To100);
 findAllbitBatBotOrNots3(arrOf1To100);
 
 findAllbitBatBotOrNots4(arrOf1To100);
+
+findAllbitBatBotOrNotsXC(arrOf1To100);

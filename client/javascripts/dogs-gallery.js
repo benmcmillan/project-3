@@ -10,10 +10,10 @@ let clickHandler = function() {
   let imgElem;
   let prefixURL =
     'https://dog.ceo/api/breed/';
-  let suffixURL = '/images/random/6';
+  let suffixURL = 'images/random/6';
   //get value entered by user from textbox
 
-  let breedTag = $('input[type = "text"]').val().toLowerCase();
+  let breedTag = getBreedTag($('input[type = "text"]').val().toLowerCase());
 
   /*let breedTag = (document.querySelector('input[type = "text"]').value).toLowerCase();*/
   console.log(breedTag);
@@ -52,6 +52,15 @@ let clickHandler = function() {
 
     });
   }).fail(failHandler);
+};
+
+let getBreedTag = (rawBreed) => {
+  let breedArr = rawBreed.trim().split(" ");
+  let result = "";
+  for (var i = 0; i < breedArr.length; i++) {
+    result = `${breedArr[i]}\/${result}`;
+  }
+  return result;
 };
 
 //2. Register the onclick handler for each button after the DOM is complete
